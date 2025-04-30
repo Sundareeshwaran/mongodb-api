@@ -7,7 +7,7 @@ import restaurantRouter from "./routes/restaurant.route.js";
 configDotenv();
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
