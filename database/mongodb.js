@@ -2,7 +2,7 @@ import { configDotenv } from "dotenv";
 import mongoose from "mongoose";
 configDotenv();
 
-const DB_URI = process.env.DB_URI || "mongodb://localhost:27017/zomoto";
+const DB_URI = process.env.DB_URI;
 
 const connectDB = async () => {
   try {
